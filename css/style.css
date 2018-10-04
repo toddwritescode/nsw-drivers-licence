@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'ubuntu-title';
+    src: url('ubuntu-title-webfont.woff2') format('woff2'),
+         url('ubuntu-title-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img.licence-click {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.section-licence {
+    height: 500px;
+    background: url(../images/bricks.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+}
+
+.licence {
+    max-width: 585px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid #333;
+    box-shadow: 3px 3px rgba(51, 51, 51, 0.4);
+    padding: 0 10px 0 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todd {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.todd-no-palm {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.todd-palm {
+    position: absolute;
+    top: 90px;
+    right: 7px;
+    transform-origin: center bottom initial;
+    transform: rotate(30deg); 
+    animation: wave 2s infinite linear; 
+}
+
+@keyframes wave {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(30deg);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .licence {
+        display: none;
+    }
+}
